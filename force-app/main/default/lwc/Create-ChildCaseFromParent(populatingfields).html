@@ -1,0 +1,25 @@
+<!--
+ - Created by nareshmittapally on 8/26/20.
+ -->
+
+<!-- Jj Create Child Case From Header -->
+<template>
+    <lightning-card title="Select Record Type">
+        <lightning-layout multiple-rows="true" vertical-align="center">
+            <lightning-layout-item size="6" small-device-size="2" medium-device-size="4" large-device-size="4"
+                                   padding="around-small">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <lightning-combobox name="recordTypes" label="Record Type ID" value={selectedValue}
+                                            placeholder="-Select-" options={options} onchange={handleChange}></lightning-combobox>
+
+                    </div>
+                </div> <br/>
+                <lightning-button label="Continue" onclick={navigateToNewCasePage} ></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
+
+
+
